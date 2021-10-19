@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="huh-e6-Bkb">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--selectTimeViewController-->
+        <scene sceneID="uEh-YP-BHq">
+            <objects>
+                <viewControllerPlaceholder storyboardName="selectTimeViewController" id="Gck-Bo-O69" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="FZv-ky-e8v"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ner-e7-Nk2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="316" y="817"/>
+        </scene>
+        <!--Item 2-->
+        <scene sceneID="xm2-5U-eHa">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fcL-HE-wrV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController id="Xzz-D7-CxV" customClass="SecondViewController" customModule="reusable_popups" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YEg-y9-rgU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5bV-Dt-cUs">
+                                <rect key="frame" x="296.5" y="44" width="97.5" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="select Date"/>
+                                <connections>
+                                    <segue destination="kAK-KY-Wuq" kind="presentation" id="WDJ-qz-RGF"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FRQ-3O-wLm">
+                                <rect key="frame" x="20" y="44" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="AAm-89-cMw"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="FRQ-3O-wLm" firstAttribute="top" secondItem="AAm-89-cMw" secondAttribute="top" id="b7f-Z1-iPH"/>
+                            <constraint firstItem="FRQ-3O-wLm" firstAttribute="leading" secondItem="AAm-89-cMw" secondAttribute="leading" constant="20" id="iee-Th-Kk2"/>
+                            <constraint firstItem="5bV-Dt-cUs" firstAttribute="top" secondItem="AAm-89-cMw" secondAttribute="top" id="jP1-QH-soN"/>
+                            <constraint firstItem="AAm-89-cMw" firstAttribute="trailing" secondItem="5bV-Dt-cUs" secondAttribute="trailing" constant="20" id="zd8-oR-4P3"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="ZNz-Hg-33p"/>
+                    <connections>
+                        <outlet property="dateLabel" destination="FRQ-3O-wLm" id="zZ9-nG-71J"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1247" y="527"/>
+        </scene>
+        <!--Item 1-->
+        <scene sceneID="ZqX-NO-151">
+            <objects>
+                <viewController id="BDd-OO-Fnk" customClass="FirstViewController" customModule="reusable_popups" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FAs-Wp-cHC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nfU-4B-bqC">
+                                <rect key="frame" x="20" y="44" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R2R-gV-F23">
+                                <rect key="frame" x="295" y="44" width="99" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Select Date"/>
+                                <connections>
+                                    <segue destination="kAK-KY-Wuq" kind="presentation" identifier="toDatePopupViewControllerSegue" modalPresentationStyle="overCurrentContext" id="om3-sk-nuS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="FvZ-mL-9hl"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="FvZ-mL-9hl" firstAttribute="trailing" secondItem="R2R-gV-F23" secondAttribute="trailing" constant="20" id="ASN-9a-1ef"/>
+                            <constraint firstItem="R2R-gV-F23" firstAttribute="top" secondItem="FvZ-mL-9hl" secondAttribute="top" id="GPN-7n-1lq"/>
+                            <constraint firstItem="nfU-4B-bqC" firstAttribute="leading" secondItem="FvZ-mL-9hl" secondAttribute="leading" constant="20" id="Xvu-ku-U87"/>
+                            <constraint firstItem="nfU-4B-bqC" firstAttribute="top" secondItem="FvZ-mL-9hl" secondAttribute="top" id="yiM-Jj-IVc"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 1" id="sol-8h-28l"/>
+                    <connections>
+                        <outlet property="dateLabel" destination="nfU-4B-bqC" id="OKn-b0-kZG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="69i-O5-aTs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1247" y="-79"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="zSS-gh-YC6">
+            <objects>
+                <tabBarController id="huh-e6-Bkb" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="PwL-q3-tvA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BDd-OO-Fnk" kind="relationship" relationship="viewControllers" id="Nzc-k3-ptB"/>
+                        <segue destination="Xzz-D7-CxV" kind="relationship" relationship="viewControllers" id="wAn-42-dy9"/>
+                        <segue destination="Gck-Bo-O69" kind="relationship" relationship="viewControllers" id="KK4-uB-4Rd"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fLY-Mp-Hq3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="352" y="224"/>
+        </scene>
+        <!--DatePopupViewController-->
+        <scene sceneID="N6L-Vu-5gL">
+            <objects>
+                <viewControllerPlaceholder storyboardName="DatePopupViewController" id="kAK-KY-Wuq" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vOj-nT-2bo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2017" y="175"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="WDJ-qz-RGF"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
